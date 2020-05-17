@@ -32,7 +32,7 @@ LRESULT __stdcall HookCallback(int nCode, WPARAM wParam, LPARAM lParam){
 			/*
 			FILE* file1;
 			file1 = fopen("coordenadas.txt", "w");
-			fprintf(file1, "caught event: wparam = 0x%08x)\n", wParam);
+			fprintf(file1, "oordinates: (%d,%d)\n", msStruct.pt.x, msStruct.pt.y);
 			*/
 		}
 	}
