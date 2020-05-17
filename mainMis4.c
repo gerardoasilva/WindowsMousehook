@@ -44,7 +44,7 @@ LRESULT __stdcall HookCallback(int nCode, WPARAM wParam, LPARAM lParam){
 void SetHook()
 {
 	// Set the hook and set it to use the callback function above
-	// WH_KEYBOARD_LL means it will set a low level keyboard hook. More information about it at MSDN.
+	// WH_MOUSE_LL means it will set a low level mouse hook. More information about it at MSDN.
 	// The last 2 parameters are NULL, 0 because the callback function is in the same thread and window as the
 	// function that sets and releases the hook. If you create a hack you will not need the callback function 
 	// in another place then your own code file anyway. Read more about it at MSDN.
